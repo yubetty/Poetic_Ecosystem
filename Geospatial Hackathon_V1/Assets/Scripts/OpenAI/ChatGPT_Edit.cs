@@ -9,20 +9,20 @@ namespace OpenAI
         public delegate void ChatGPTResponseEventDelegate(string outgoingMessage);
         public event ChatGPTResponseEventDelegate OutgoingChatGPTMessageEvent;
 
-        private OpenAIApi openai = new OpenAIApi();
+        private OpenAIApi openai = new OpenAIApi("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");
 
         private List<ChatMessage> messages = new List<ChatMessage>();
         private string prompt = "Generate a haiku in 5 lines. Don't break character. Don't ever mention that you are an AI model. Now generate a response based on this text: ";
 
 
-        public async void SendReply(string message)
+        public async void SendReply(string inputMessage)
         {
             var newMessage = new ChatMessage()
             {
                 Role = "user",
 
                 //replace with text from whisper
-                Content = prompt + message
+                Content = prompt + inputMessage
             };
 
             messages.Add(newMessage);
