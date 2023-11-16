@@ -2,33 +2,24 @@ using UnityEngine;
 
 public class ClickablePoemObject : MonoBehaviour
 {
-    private PoemManager _poemManager;
+    // Define a delegate that takes a string parameter (the unique name of the object)
+    public delegate void ObjectClickedAction(string uniqueName);
 
-    private void Start()
-    {
-        // Find the PoemManager instance in the scene
-        _poemManager = FindObjectOfType<PoemManager>();
-
-        if (_poemManager == null)
-        {
-            Debug.LogError("PoemManager not found in the scene.");
-        }
-    }
+    // Define an event based on the delegate
+    public static event ObjectClickedAction OnObjectClicked;
 
     private void OnMouseDown() // This function is called when the object is clicked
     {
-        if (_poemManager != null)
+        // Get the UniqueIdentifier component
+        UniqueIdentifier uniqueIdentifier = GetComponent<UniqueIdentifier>();
+        if (uniqueIdentifier != null)
         {
-            Poem poem = _poemManager.GetPoemFromGameObject(gameObject);
-            if (poem != null)
-            {
-                Debug.Log(poem.Text); // Print the poem to the console
-            }
-            else
-            {
-                Debug.Log("No poem assigned to this object.");
-            }
+            // Invoke the event with the unique name of this object
+            OnObjectClicked?.Invoke(uniqueIdentifier.objectId);
         }
-
+        else
+        {
+            Debug.LogError("UniqueIdentifier component not found on this GameObject.");
+        }
     }
 }
