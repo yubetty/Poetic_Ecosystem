@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ChatGPT_SendMessage : MonoBehaviour
+public class App_Manager : MonoBehaviour
 {
     private ChatGPT_Edit _chatGPT;
     private PoemManager _poemManager;
