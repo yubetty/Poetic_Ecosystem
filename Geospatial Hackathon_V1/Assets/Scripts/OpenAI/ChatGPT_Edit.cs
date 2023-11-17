@@ -12,7 +12,7 @@ namespace OpenAI
         private OpenAIApi openai = new OpenAIApi("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");
 
         private List<ChatMessage> messages = new List<ChatMessage>();
-        private string prompt = "Using the following word, generate a haiku with up to 15 words: ";
+        private string prompt = "Inspired by but not inluding the following word, generate a mythical haiku with up to 15 words: ";
 
 
 
