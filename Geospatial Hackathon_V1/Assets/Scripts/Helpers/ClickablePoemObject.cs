@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ClickablePoemObject : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class ClickablePoemObject : MonoBehaviour
 
     private void OnMouseDown() // This function is called when the object is clicked
     {
+        // Check if the current pointer is over a UI element
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            // If it's over a UI element, do nothing (return)
+            return;
+        }
+
         // Get the UniqueIdentifier component
         UniqueIdentifier uniqueIdentifier = GetComponent<UniqueIdentifier>();
         if (uniqueIdentifier != null)

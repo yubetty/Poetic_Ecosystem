@@ -8,7 +8,7 @@ public class App_Manager : MonoBehaviour
 {
     private ChatGPT_Edit _chatGPT;
     private PoemManager _poemManager;
-    private string lastClickedObjectName;
+    private string _lastClickedObjectName;
 
     [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private TMP_Text _objName, _poemTextObj;
@@ -40,7 +40,7 @@ public class App_Manager : MonoBehaviour
         Poem newPoem = new Poem();
         newPoem.Text = chatGPT_message;
 
-        GameObject targetObject = GameObject.Find(lastClickedObjectName);
+        GameObject targetObject = GameObject.Find(_lastClickedObjectName);
         if (targetObject != null)
         {
             _poemManager.AssignPoemToGameObject(targetObject, newPoem);
@@ -56,14 +56,14 @@ public class App_Manager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Object with unique name not found: " + lastClickedObjectName);
+            Debug.LogError("Object with unique name not found: " + _lastClickedObjectName);
         }
     }
 
     private void HandleObjectClicked(string uniqueName)
     {
         Debug.Log("Clicked object with unique name: " + uniqueName);
-        lastClickedObjectName = uniqueName;
+        _lastClickedObjectName = uniqueName;
         UIObject.SetActive(true); // Activate the UI when an object is clicked
 
         // Check if there's an existing poem for this object
