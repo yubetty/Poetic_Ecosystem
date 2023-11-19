@@ -163,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 5803325626811834190, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: ChatGPT
+      value: Geo
       objectReference: {fileID: 0}
     - target: {fileID: 5803325626811834190, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
