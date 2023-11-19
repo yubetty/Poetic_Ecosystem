@@ -12,7 +12,8 @@ namespace OpenAI
         private OpenAIApi openai = new OpenAIApi("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");
 
         private List<ChatMessage> messages = new List<ChatMessage>();
-        private string prompt = "Generate a poem in 5 lines. Don't break character. Don't ever mention that you are an AI model. Now generate a response including this word: ";
+        private string prompt = "Inspired by but not inluding the following word, generate a cryptic, mythical haiku using old english, up to 15 words: ";
+
 
 
         public async void SendReply(string inputMessage)
