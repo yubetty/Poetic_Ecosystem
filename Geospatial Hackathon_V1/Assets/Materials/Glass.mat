@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8656608300898585136
+--- !u!114 &-5055773921031945439
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: character
+  m_Name: Glass
   m_Shader: {fileID: -6465566751694194690, guid: 9ec4d7a7fcd0f55468c04a81d619849a,
     type: 3}
   m_ValidKeywords: []
@@ -100,7 +100,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Fresnel_Power: 7
+    - Fresnel_Power: 10
     - IOR: 0.5
     - NormalStrength: 1
     - _AlphaClip: 0
@@ -118,13 +118,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0.353
+    - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.502
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -132,11 +132,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - BaseColor: {r: 0.6509434, g: 0.3353732, b: 0.11463149, a: 0}
-    - Fresnel_Color: {r: 1, g: 1, b: 1, a: 0}
+    - BaseColor: {r: 0.5660378, g: 0.38506028, b: 0.20113917, a: 0}
+    - Fresnel_Color: {r: 0.745283, g: 0.29998806, b: 0.29998806, a: 0}
     - NormalmapTilling: {r: 1, g: 1, b: 0, a: 0}
-    - _BaseColor: {r: 0.93333334, g: 0.90238315, b: 0.8509804, a: 1}
-    - _Color: {r: 0.93333334, g: 0.90238315, b: 0.8509804, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.009433985, g: 0.009168777, b: 0.0089593185, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

@@ -170,6 +170,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_text
+      value: Poetic Ecosystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -54.455444
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -53.235596
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628129473914, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628129473914, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628129473914, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5803325628803538812, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
       propertyPath: m_RootOrder
