@@ -79,7 +79,7 @@ public class App_Manager : MonoBehaviour
         {
             // If there's no poem, prompt for input
             _objName.text = uniqueName;
-            _poemTextObj.text = "What’s on your mind? Start making your own poetic creature by inputting some words below!";
+            _poemTextObj.text = "What’s on your mind? \nInput some words and Start generating your poetic creature!";
         }
     }
 
