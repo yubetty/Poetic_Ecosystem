@@ -1,4 +1,4 @@
-using OpenAI;
+﻿using OpenAI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -79,7 +79,7 @@ public class App_Manager : MonoBehaviour
         {
             // If there's no poem, prompt for input
             _objName.text = uniqueName;
-            _poemTextObj.text = "Input a word to create a poem";
+            _poemTextObj.text = "What’s on your mind? Start making your own poetic creature by inputting some words below!";
         }
     }
 

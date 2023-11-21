@@ -177,13 +177,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
+      propertyPath: m_fontSize
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
       propertyPath: m_margin.x
-      value: -54.455444
+      value: -131.64307
       objectReference: {fileID: 0}
     - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
       propertyPath: m_margin.z
       value: -53.235596
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835934, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628023835935, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 5803325628129473914, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
@@ -199,6 +214,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -317.69843
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -211.05624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -184.1242
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803325628385832078, guid: 6823d21664eef7443a2a5752ac5effff,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5803325628803538812, guid: 6823d21664eef7443a2a5752ac5effff,
         type: 3}
